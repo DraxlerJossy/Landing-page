@@ -1,0 +1,362 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+header {
+  position: relative;
+  background-image: url(../images/code.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+nav.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav.navbar a,
+nav.navbar ul li a {
+  color: rgb(0, 255, 0) !important;
+}
+nav.navbar ul li a:hover {
+  background-color: blue;
+  transition: 0.5s;
+}
+.brand {
+  font-size: xx-large;
+  font-family: comic;
+  font-weight: 6rem;
+  color: honeydew;
+}
+
+nav.navbar ul li {
+  font-weight: bold;
+  padding: 0 15px;
+  background-color: lightcoral;
+  opacity: 0.7;
+}
+
+header .container {
+  padding-top: 30%;
+  font-weight: bolder;
+  color: blanchedalmond;
+}
+
+header button {
+  background-color: transparent;
+  color: white;
+  display: block;
+  border: 1px solid rgb(34, 255, 0);
+  border-radius: 3rem;
+  padding: 0;
+  margin: 30px auto;
+}
+
+header button:hover {
+  background-color: #bd8cbf;
+  border: 1px solid #bd8cbf;
+  transition: 0.4s;
+}
+
+/*about us */
+
+.about-us {
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.about-us h1 {
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.about-us p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.about-us .first {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.line {
+  border: 1px solid green;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.about-us .container {
+  padding-top: 2rem;
+}
+
+.about-us img {
+  height: 200px;
+}
+
+/* services */
+
+.service-head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.service-head h2 {
+  font-weight: bold;
+  line-height: 4rem;
+  font-size: 2rem;
+}
+
+.service-head p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.services .card {
+  padding: 10px;
+}
+
+.services h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.services .card p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+/*portfolio */
+
+#portfolio .portfolio-head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  padding-top: 50px;
+}
+
+.portfolio img {
+  height: 200px;
+  width: 290px;
+  margin: 10px;
+}
+
+.pic {
+  position: relative;
+}
+
+.pic .text-content {
+  display: none;
+  opacity: 0.8;
+  background: #cae5c1;
+  width: 290px;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+}
+
+/* portfolio */
+.team .team-head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  padding-top: 6rem;
+}
+
+.portfolio-head h2 {
+  font-weight: bold;
+  line-height: 4rem;
+  font-size: 2rem;
+}
+
+.portfolio-head p {
+  font-family: "Courier New", Courier, monospace;
+}
+/*team*/
+
+.team img {
+  height: 150px;
+  width: 180px;
+}
+/*
+.team h3,p {
+    text-transform: uppercase;
+} */
+.person {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 180px;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: red;
+}
+
+.person:hover .overlay {
+  opacity: 0.6;
+}
+
+.icon {
+  color: rgb(61, 72, 63);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fab:hover {
+  color: rgb(39, 255, 39);
+}
+
+.image {
+  right: 45%;
+  left: 20%;
+}
+/*.single-content {
+     position: relative;
+     transition: .3s;
+     box-shadow: 10px 20px 20px rgb(8, 0, 8, 0.8);
+ }
+
+ .single-content .content-body,
+ .single-content::after {
+     position: absolute;
+     left: 20px;
+     right: 20px;
+ }
+
+ .single-content::after {
+     content: '';
+     display: block;
+     background: crimson;
+     top: 50%;
+     bottom: 20px;
+     opacity: 0;
+     transform: rotate3d(-1,1,0,100deg);
+     transition: .4s;
+ }
+
+ .single-content:hover::after {
+     opacity: .9;
+     transform: rotate3d(0,0,0,0deg);
+ }
+
+
+ .content-body .icons {
+     top: 45px;
+     left: 50%;
+     opacity: 0;
+     z-index: 1;
+     transform: translate(-50%, -500%);
+     transition: .3s;
+     text-align: center;
+     color: rgb(7, 5, 5);
+ }
+.single-content:hover .content-body .icons {
+    opacity: 1;
+    transform: translate(0, -50%);
+    transition-delay: .3s;
+} */
+
+/* blog */
+.blog-head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  padding-top: 6rem;
+}
+
+.blog-head h2 {
+  font-weight: bold;
+  line-height: 4rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.blog-head p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.blog .card {
+  margin: 10px;
+}
+
+.blog .card-img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.contact {
+  background-attachment: fixed;
+  height: 70vh;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.contact .btn-info {
+  margin-left: 45%;
+  margin-right: 50%;
+  margin-top: 1rem;
+  padding: 0.6rem 3rem;
+  border-radius: 1rem;
+}
+
+.contact .btn-info:hover {
+  background-color: green;
+  transition: 0.3s;
+}
+
+#footer {
+  margin-top: 10rem;
+  background-color: lightgreen;
+}
+
+#footer i {
+  font-size: 1.3rem;
+  color: lightcoral;
+  margin: 5px;
+}
+
+@media (min-width: 990px) {
+  nav.navbar ul li {
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
+  a {
+    color: black !important;
+  }
+  nav.navbar ul li a:hover {
+    background-color: rgb(143, 48, 48);
+    transition: 0.4s;
+    border-radius: 3rem;
+  }
+}
